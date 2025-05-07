@@ -1,15 +1,27 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.5.3/"
+    "lume/": "https://deno.land/x/lume@v3.0.0/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.9/jsx-runtime.ts"
   },
+  "unstable": [
+    "temporal"
+  ],
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
-    "dev": "deno task lume -s"
+    "dev": "deno task lume -s",
+    "serve": "deno task lume -s"
   },
   "compilerOptions": {
     "types": [
       "lume/types.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "lume"
+  },
+  "lint": {
+    "plugins": [
+      "https://deno.land/x/lume@v3.0.0/lint.ts"
     ]
   }
 }
