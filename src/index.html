@@ -1,5 +1,6 @@
 ---
 layout: layout.html
+
 ---
 
 <section id="hero">
@@ -10,6 +11,7 @@ layout: layout.html
       <div class="flex flex-col gap-4 justify-center">
         <h1 class="text-4xl md:text-6xl">Josh Kearney</h1>
         <p>Bachelor of Education from the University of Alberta</p>
+
       </div>
     </div>
   </div>
@@ -17,15 +19,25 @@ layout: layout.html
 
 <section id="services">
   <div class="max-w-4xl mx-auto py-24 px-2 md:px-0">
-    <div class="grid grid-cols-1 md:grid-cols-2 text-center gap-8 md:gap-16">
-      <div class="border py-20 md:py-30 rounded">
-        <h2 class="text-3xl">In-person tutoring</h2>
-        <p>Few sentences about it</p>
+
+    <h2 class="text-3xl text-center">Tutoring Services</h2>
+
+    <div class="py-8 max-w-2xl mx-auto">
+      <p>I offer both in-person and online tutoring beginning with a consultation that will allow me to create an IEP
+        (Individualized Education Plan) for you student in order to support them the way they need.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+      <div class="flex flex-col gap-10 border md:min-h-30 py-10 px-6 rounded">
+        <h2 class="text-3xl text-center">In-person tutoring</h2>
+        <p>Let's find a public space conducive to your student's learning. Some places include the public library, a
+          cafe, or a place convenient for you.</p>
       </div>
 
-      <div class="border py-20 md:py-30 rounded">
-        <h2 class="text-3xl">Online tutoring</h2>
-        <p>Few sentences about this one</p>
+      <div class="flex flex-col gap-10 border md:min-h-30 py-10 px-6 rounded">
+        <h2 class="text-3xl text-center">Online tutoring</h2>
+        <p>We'll use Google Meet. With permission, sessions will be
+          recorded for extra review material. Accomodations for time-zones outside Alberta can also be arranged.</p>
       </div>
     </div>
   </div>
@@ -48,7 +60,7 @@ layout: layout.html
       </div>
 
       <div class="flex flex-col justify-center gap-2 text-center rounded-xl bg-gray-200 h-32">
-        <span>Also available in</span>
+        <span>Instruction available in</span>
         <div class="text-2xl">French</div>
       </div>
     </div>
@@ -61,36 +73,51 @@ layout: layout.html
 
     <div class="space-y-12">
 
+      <h2 class="text-3xl text-center">Biography</h2>
 
-    <h2 class="text-3xl text-center">Biography</h2>
+      <div class="grid grid-cols-3 gap-8 max-w-4xl">
 
-    <div class="grid grid-cols-3 gap-8 max-w-4xl">
+        <img src="https://placehold.co/320x320" width="320" height="320" />
+        <img src="https://placehold.co/320x320" width="320" height="320" />
+        <img src="https://placehold.co/320x320" width="320" height="320" />
 
-      <img src="https://placehold.co/320x320" width="320" height="320" />
-      <img src="https://placehold.co/320x320" width="320" height="320" />
-      <img src="https://placehold.co/320x320" width="320" height="320" />
+      </div>
+
+      <div class="flex justify-evenly max-w-xs mx-auto">
+        <div><a href="https://www.instagram.com/jcarknee/"><img class="size-8"
+              src="{{ 'instagram' |> icon('simpleicons') }}"></a></div>
+        <div><a href=""><img class="size-8" src="{{ 'linkedin' |> icon('bootstrap') }}"></a></div>
+        <div><a href="https://www.facebook.com/josh.kearney.31"><img class="size-8"
+              src="{{ 'facebook' |> icon('simpleicons') }}"></a></div>
+      </div>
+
+
+      <div class="max-w-lg space-y-4 mx-auto">
+        <h3 class="font-bold text-center">About me</h3>
+
+        <p>
+          My name is Josh Kearney and I am an educator based out of Edmonton, Alberta. I'm originally from Whitehorse,
+          Yukon but moved down to Edmonton in 2019 to pursue my university education. Having just graduated in Spring
+          2025, I am now looking for ways to spread my love of education with my community - whether that be physical,
+          academic, or artistic education. As a Breakdancer, a School Teacher, and an Athlete, I am passionate about how
+          all the different types of education can intersect and influence success in each other.
+        </p>
+
+        <p>
+          When it comes to tutoring, my philosophy is based heavily on the idea that every person is intelligent and a
+          body of knowledge. Often times, students are made to feel like they don't know anything, but that is rarely
+          the case. As their tutor, my job to connect my students prior knowledge to the academic world in order to
+          improve their abilities as students.
+        </p>
+
+        <h3 class="font-bold text-center">Fun Facts</h3>
+
+        <p>I am a Community Leader in Edmonton's Breakdancing Non-Profit - Freestyle Movement - where I plan events and
+          help support our greater Breakdancing community. I also, love nature and going on adventures so if you have
+          any advice for where to explore here in Alberta, I would love to hear it!</p>
+      </div>
 
     </div>
-
-    <div class="flex justify-evenly max-w-xs mx-auto">
-      <div><a href=""><img class="size-8" src="{{ 'instagram' |> icon('simpleicons') }}"></a></div>
-      <div><a href=""><img class="size-8" src="{{ 'linkedin' |> icon('bootstrap') }}"></a></div>
-      <div><a href=""><img class="size-8" src="{{ 'facebook' |> icon('simpleicons') }}"></a></div>
-    </div>
-
-    <div class="max-w-lg space-y-4">
-      <p class="">
-        A few sentences about Josh. Name, origin story.
-      </p>
-
-      <p>
-        why you tutor? What motivates you?
-      </p>
-
-      <p>Fun facts / hobbies</p>
-    </div>
-          
-  </div>
   </div>
 </section>
 
